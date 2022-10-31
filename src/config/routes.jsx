@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import Layout from "../components/Layout";
 import Home from "../pages/Home";
+import Name from "../pages/Name";
 import Pokemon from "../pages/Pokemon";
 import Profile from "../pages/Profile";
 
@@ -22,6 +23,10 @@ const routeObject = [
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/name/:name",
+        element: <Name />,
       },
     ],
   },
